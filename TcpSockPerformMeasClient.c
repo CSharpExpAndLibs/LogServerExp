@@ -32,7 +32,7 @@ void DispValues(int *diffs, int count, int bytes)
     ave /= count;
 
     // 表示
-    printf("--- Bytes=%d, Count=%d ---", bytes, count);
+    printf("--- Bytes=%d, Count=%d ---\n", bytes, count);
     printf("Max=%d\n", max);
     printf("Min=%d\n", min);
     printf("Ave=%d\n", ave);
