@@ -1,7 +1,8 @@
 CC = gcc
 CFLAGS = -g3
 
-TARGETS = TcpSockServer TcpSockClient DomainSockServer
+TARGETS = TcpSockServer TcpSockClient DomainSockServer \
+TcpSockPerformMeasServer TcpSockPerformMeasClient
 
 all: $(TARGETS)
 
@@ -9,6 +10,12 @@ TcpSockServer: TcpSockServer.o
 	$(CC) $(CFLAGS) -o $@ $^
 
 TcpSockClient: TcpSockClient.o
+	$(CC) $(CFLAGS) -o $@ $^
+
+TcpSockPerformMeasServer: TcpSockPerformMeasServer.o
+	$(CC) $(CFLAGS) -o $@ $^
+
+TcpSockPerformMeasClient: TcpSockPerformMeasClient.o
 	$(CC) $(CFLAGS) -o $@ $^
 
 DomainSockServer: DomainSockServer.o
