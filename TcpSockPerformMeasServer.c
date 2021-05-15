@@ -8,7 +8,8 @@
 #include <string.h>
 #include <unistd.h>
 
-#define DBG(a) printf a
+//#define DBG(a) printf a
+#define DBG(a)
 #define QUEUELIMIT 5
 #define BUFSIZE (4096)
 

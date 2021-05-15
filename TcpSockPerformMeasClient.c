@@ -13,7 +13,8 @@
 #include <unistd.h>
 #include <sys/time.h>
 
-#define DBG(a) printf a
+//#define DBG(a) printf a
+#define DBG(a)
 #define BUFSIZE (4096)
 
 void DispValues(int *diffs, int count, int bytes)
